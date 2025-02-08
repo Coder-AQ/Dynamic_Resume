@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dynamic-resume.css">
+    <title>Dynamic Resume Builder</title>
+</head>
+<body>
+    <form id="resume-form" class="container">
+        <div class="right">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about" rows="4" maxlength="300"></textarea>
+            <label for="interests">Interests:</label>
+            <textarea id="interests" name="interests" rows="4"></textarea>
+            <h2>Education</h2>
+            <label for="school">School/College:</label>
+            <input type="text" id="school" name="school" required>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree">
+        </div>
+        <div class="left">
+            <h2>Work Experience</h2>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+            <h2>Contact</h2>          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{7}" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <button type="submit">Generate Resume</button>
+    </form>
+    <div id="resume-output" class="resume">
+        <div class="left-side">
+            <img id="profile-pic-output" alt="Profile Picture" class="profile-pic">             
+            <div class="section">
+                <h2>Work Experience</h2>
+                <p id="experience-output"></p>
+            </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <p id="skills-output"></p>
+            </div>      
+        </div>
+        <div class="right-side">
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <p id="name-output"></p>
+                <div class="section">
+                    <h2>About Me</h2>
+                    <p id="about-output"></p>
+                </div>
+                <div class="section">
+                    <h2>Interests</h2>
+                    <p id="interests-output"></p>
+                </div>                        
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <p id="school-output"></p>
+                <p id="degree-output"></p>
+            </div>
+        </div>
+    </div>
+    <script src="resume.js"></script>
+</body>
+</html>

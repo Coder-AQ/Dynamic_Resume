@@ -1,0 +1,81 @@
+body {
+    background: #457068; /* Darkest Color */
+    color: #000000;
+    padding: 15rem;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: #2fb69b9f; /* Lightest Color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-top: 1rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color:#abdad0;
+}
+button {
+    background-color: #D1F2EB; /* Lightest Color */
+    color: #0B5345;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: #17A589;
+}
+.resume {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #17A589; /* Medium Color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.left-side {
+    width: 30%;
+    padding-right: 2rem;
+    border-right: 2px solid #0B5345;
+}
+.right-side {
+    width: 70%;
+}
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #0B5345;
+    margin-bottom: 1rem;
+}
+.personal-info {
+    background-color: #D1F2EB; /* Lightest Color */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+.section {
+    background-color: #D1F2EB; /* Lightest Color */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+.skill, .interest {
+    display: inline-block;
+    background-color: #0B5345;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
